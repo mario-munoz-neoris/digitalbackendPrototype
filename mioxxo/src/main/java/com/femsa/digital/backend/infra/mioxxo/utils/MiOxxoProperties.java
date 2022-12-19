@@ -24,4 +24,6 @@ public class MiOxxoProperties {
 	@Value("${mioxxo.api.getinvoices.path}")
 	private String getInvoicesPath;
 
+	@Value("${mioxxo.api.getcategories.path}")
+	private String getCategories;
 }

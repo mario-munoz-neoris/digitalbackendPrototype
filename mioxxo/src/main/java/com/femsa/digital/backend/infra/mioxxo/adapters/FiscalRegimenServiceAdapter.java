@@ -1,8 +1,5 @@
 package com.femsa.digital.backend.infra.mioxxo.adapters;
 
-import static com.femsa.digital.backend.domain.exceptions.ErrorCodes.SERVICE_UNAVAILABLE_CODE;
-import static com.femsa.digital.backend.domain.exceptions.ErrorCodes.UNAUTHORIZED_CODE;
-
 import java.net.URI;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +20,8 @@ import com.femsa.digital.backend.infra.mioxxo.services.TokenAccessService;
 import com.femsa.digital.backend.infra.mioxxo.utils.MiOxxoProperties;
 
 import lombok.extern.slf4j.Slf4j;
+
+import static com.femsa.digital.backend.domain.exceptions.ErrorCodes.*;
 
 
 @Slf4j
@@ -59,7 +58,7 @@ public class FiscalRegimenServiceAdapter implements GetRegimenFiscalPort {
             ResponseEntity<ApiResponseInvoiceDTO> response = template.exchange(request, ApiResponseInvoiceDTO.class);
 
             log.info("Response: {}", response );
-            if(response != null && response.getBody() != null){
+            if(response.getBody() != null){
                 return response.getBody();
             }
 
@@ -67,6 +66,10 @@ public class FiscalRegimenServiceAdapter implements GetRegimenFiscalPort {
             log.error("Error al consultar el servicio de clientes {} ", httpEx.getMessage());
             if(httpEx.getStatusCode().value() == 401){
                 throw new ConsultasExceptions(UNAUTHORIZED_CODE.toString());
+            }
+
+            if(httpEx.getStatusCode().value() == 400){
+                throw new ConsultasExceptions(BAD_REQUEST_CODE.message());
             }
 
             throw new ConsultasExceptions(SERVICE_UNAVAILABLE_CODE.toString());

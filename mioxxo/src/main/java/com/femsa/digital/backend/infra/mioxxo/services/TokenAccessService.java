@@ -28,7 +28,7 @@ public class TokenAccessService {
     MiOxxoProperties properties;
 
     @Value("$(cron_token_time)")
-    static final int timeDelay = 50000;
+    static final int timeDelay = 1680000; // 28 minutos activo
     
     private String token;
 
@@ -57,7 +57,7 @@ public class TokenAccessService {
             // Prepare request to invoke service
             RestTemplate template = new RestTemplate();
             final HttpEntity<String> entity = new HttpEntity<>(body, authHeaders);
-            URI url = new URI(properties.getBaseUrl()+properties.getGetTokenPath());
+            URI url = new URI(properties.getGetTokenPath());
 
             // Invoke service
             ResponseToken response = template.postForObject(url, entity, ResponseToken.class);
@@ -69,7 +69,7 @@ public class TokenAccessService {
             return response.getAccess_token();
         } catch (HttpClientErrorException httpEx){
             httpEx.printStackTrace();
-            log.error("Error al consultar el servicio de clientes {} ", httpEx.getMessage());
+            log.error("Error al consultar el servicio de token {} ", httpEx.getMessage());
             if(httpEx.getStatusCode().value() == 401){
                 throw new ConsultasExceptions(UNAUTHORIZED_CODE.toString());
             }
@@ -77,7 +77,7 @@ public class TokenAccessService {
             throw new ConsultasExceptions(SERVICE_UNAVAILABLE_CODE.toString());
         }catch (Exception ex){
             ex.printStackTrace();
-            log.error("Error al consumir el servicio de clientes {}", ex.getMessage());
+            log.error("Error al consumir el servicio de token {}", ex.getMessage());
             throw new ConsultasExceptions(SERVICE_UNAVAILABLE_CODE.toString());
         }
     }
