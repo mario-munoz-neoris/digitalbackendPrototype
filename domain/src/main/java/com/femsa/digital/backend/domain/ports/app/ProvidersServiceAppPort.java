@@ -8,7 +8,7 @@ import com.femsa.digital.backend.domain.ports.app.dto.ApiResponseProvidersDTO;
 
 public interface ProvidersServiceAppPort {
 
-    public ApiResponseProvidersDTO getProviders (String provider, long limit, long page);
+    public ApiResponseProvidersDTO getProviders (String provider, long limit, long page, String category);
 
     public ApiResponseProvidersDTO getProviderById (String providerId);
 

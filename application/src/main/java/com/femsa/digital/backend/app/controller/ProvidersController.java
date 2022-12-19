@@ -27,13 +27,14 @@ public class ProvidersController {
     @GetMapping(produces = "application/json")
     public ResponseEntity<ApiResponseProvidersDTO> getProviders(@RequestParam String provider,
                                                                 @RequestParam int limit,
-                                                                @RequestParam int page) {
+                                                                @RequestParam int page,
+                                                                @RequestParam String category) {
         log.info("Get providers");
-        return ResponseEntity.ok(providersServiceAppPort.getProviders(provider, limit, page));
+        return ResponseEntity.ok(providersServiceAppPort.getProviders(provider, limit, page, category));
     }
 
     @GetMapping(value = "/{providerId}", produces = { MediaType.APPLICATION_JSON_VALUE })
-    public ResponseEntity<ApiResponseProvidersDTO> getPorviderById(@PathVariable("providerId") String providerId){
+    public ResponseEntity<ApiResponseProvidersDTO> getProviderById (@PathVariable("providerId") String providerId){
         log.info("Get provider by Id");
         return ResponseEntity.ok(providersServiceAppPort.getProviderById(providerId));
 

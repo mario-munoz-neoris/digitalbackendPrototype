@@ -17,8 +17,8 @@ public class ProvidersService implements ProvidersServiceAppPort {
     }
 
     @Override
-    public ApiResponseProvidersDTO getProviders (String provider, long limit, long page) {
-        return getProvidersServicePort.getProviders(provider, limit, page);
+    public ApiResponseProvidersDTO getProviders (String provider, long limit, long page, String category) {
+        return getProvidersServicePort.getProviders(provider, limit, page, category);
     }
 
     @Override

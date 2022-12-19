@@ -33,7 +33,7 @@ public class ProvidersServiceAdapter implements GetProvidersServicePort {
     TokenAccessService tokenAccess;
 
     @Override
-    public ApiResponseProvidersDTO getProviders (String provider, long limit, long page) {
+    public ApiResponseProvidersDTO getProviders (String provider, long limit, long page, String category) {
         try {
 
             String token = tokenAccess.getToken();
@@ -49,7 +49,8 @@ public class ProvidersServiceAdapter implements GetProvidersServicePort {
             URI uriParams = UriComponentsBuilder.fromUri(uri)
                     .queryParam("query", provider)
                     .queryParam("limit", String.valueOf(limit))
-                    .queryParam("page", String.valueOf(page)).build().toUri();
+                    .queryParam("page", String.valueOf(page))
+                    .queryParam("category", category).build().toUri();
 
             RequestEntity request = new RequestEntity<>(entity.getHeaders(), HttpMethod.GET, uriParams);
 
