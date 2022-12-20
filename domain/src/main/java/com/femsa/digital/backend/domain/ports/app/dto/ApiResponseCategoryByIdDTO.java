@@ -7,11 +7,9 @@ package com.femsa.digital.backend.domain.ports.app.dto;
 import lombok.Data;
 
 import java.util.List;
-
 @Data
-public class ApiResponseCategoriesDTO{
+public class ApiResponseCategoryByIdDTO{
 
     private String status;
-    private List<CategoriesResponse> categories;
-    private MetaDataResponse metadata;
+    private CategoriesResponse category;
 }
