@@ -5,7 +5,10 @@ package com.femsa.digital.backend.domain.ports.app;
  */
 
 import com.femsa.digital.backend.domain.ports.app.dto.ApiResponseCategoriesDTO;
+import com.femsa.digital.backend.domain.ports.app.dto.ApiResponseCategoryByIdDTO;
 
 public interface CategoriesServiceAppPort {
     ApiResponseCategoriesDTO getCategories();
+
+    ApiResponseCategoryByIdDTO getCategoryById(String id);
 }

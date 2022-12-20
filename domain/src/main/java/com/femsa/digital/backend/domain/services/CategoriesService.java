@@ -7,6 +7,7 @@ package com.femsa.digital.backend.domain.services;
 import com.femsa.digital.backend.domain.ports.apis.GetCategoriesServicePort;
 import com.femsa.digital.backend.domain.ports.app.CategoriesServiceAppPort;
 import com.femsa.digital.backend.domain.ports.app.dto.ApiResponseCategoriesDTO;
+import com.femsa.digital.backend.domain.ports.app.dto.ApiResponseCategoryByIdDTO;
 
 public class CategoriesService implements CategoriesServiceAppPort {
 
@@ -19,5 +20,10 @@ public class CategoriesService implements CategoriesServiceAppPort {
     @Override
     public ApiResponseCategoriesDTO getCategories() {
         return getCategoriesServicePort.getCategories();
+    }
+
+    @Override
+    public ApiResponseCategoryByIdDTO getCategoryById(String id) {
+        return this.getCategoriesServicePort.getCategoryById(id);
     }
 }
