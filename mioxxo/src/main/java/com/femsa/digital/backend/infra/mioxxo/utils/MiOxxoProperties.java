@@ -27,6 +27,10 @@ public class MiOxxoProperties {
 	@Value("${mioxxo.api.getcategories.path}")
 	private String getCategories;
 
+	@Value("${mioxxo.api.getOperators.path}")
+	private String getOperators;
+
 	@Value("${service.mgo.mioxxo.url.providers}")
 	private String getProviders;
+
 }
