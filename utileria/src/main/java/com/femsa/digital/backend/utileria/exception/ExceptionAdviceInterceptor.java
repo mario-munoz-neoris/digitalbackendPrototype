@@ -16,6 +16,10 @@ import com.femsa.digital.backend.utileria.dto.ResponseDTO;
 public class ExceptionAdviceInterceptor {
 
 	/**
+	 * Firma de metodo que se dispara desde los clientes que lo invocan lanzando una
+	 * {@link Exception} personalizada y un mensaje de tipo {@link String}. Devuelve
+	 * un objeto {@link ResponseDTO} con el detalle {@link MetaDTO} en formato JSON
+	 * 
 	 * @author jesus.scruz
 	 * @param ex
 	 * @return
@@ -35,6 +39,10 @@ public class ExceptionAdviceInterceptor {
 	}
 
 	/**
+	 * Firma de metodo que se dispara desde los clientes que lo invocan lanzando una
+	 * {@link Exception} generica y un mensaje de tipo {@link String}. Devuelve un
+	 * objeto {@link ResponseDTO} y con el detalle {@link MetaDTO} en formato JSON
+	 * 
 	 * @author jesus.scruz
 	 * @param ex
 	 * @param request
@@ -42,9 +50,12 @@ public class ExceptionAdviceInterceptor {
 	 */
 	@ExceptionHandler(Exception.class)
 	public ResponseEntity<ResponseDTO> globalExceptionHandler(Exception ex, WebRequest request) {
+		ResponseDTO respuesta = new ResponseDTO();
 		MetaDTO meta = new MetaDTO();
 		meta.setMsg(ex.getMessage());
-		ResponseDTO respuesta = new ResponseDTO();
+		meta.setStatus(HttpStatus.INTERNAL_SERVER_ERROR.value());
+		meta.setTransactionID(UUID.randomUUID());
+		meta.setTimestamp(new Timestamp(System.currentTimeMillis()));
 		respuesta.setMeta(meta);
 		return new ResponseEntity<>(respuesta, null, HttpStatus.INTERNAL_SERVER_ERROR.value());
 	}
