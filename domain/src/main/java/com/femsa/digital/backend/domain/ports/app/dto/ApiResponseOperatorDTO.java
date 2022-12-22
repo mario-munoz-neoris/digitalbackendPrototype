@@ -2,11 +2,10 @@ package com.femsa.digital.backend.domain.ports.app.dto;
 
 import lombok.Data;
 
-import java.util.List;
 
 @Data
-public class ApiResponseOperatorsDTO {
+public class ApiResponseOperatorDTO {
     private String status;
-    private List<OperatorsDTO> operators;
+    private OperatorDTO operators;
     private MetaDataResponse metadata;
 }

@@ -10,6 +10,6 @@ public class PerksDTO {
     private String legend;
     private String megas;
     private String sku;
-    private String itemId;
-    private List<AppPerkDTO> appsPerks;
+    private String item_id;
+    private List<AppPerkDTO> apps_perks;
 }
