@@ -34,12 +34,15 @@ public class CategoriesServiceAdapter implements GetCategoriesServicePort {
     @Autowired
     TokenAccessService tokenAccess;
 
+    @Autowired
+    RestTemplate template;
+
     @Override
     public ApiResponseCategoryByIdDTO getCategoryById(String id) {
         try{
 
             // Invoke service
-            RestTemplate template = new RestTemplate();
+            //RestTemplate template = new RestTemplate();
             ResponseEntity<ApiResponseCategoryByIdDTO> response = template.exchange(
                     this.getEntity(this.getHeader(), id), ApiResponseCategoryByIdDTO.class);
 
@@ -67,7 +70,6 @@ public class CategoriesServiceAdapter implements GetCategoriesServicePort {
         try{
 
             // Invoke service
-            RestTemplate template = new RestTemplate();
             ResponseEntity<ApiResponseCategoriesDTO> response = template.exchange(
                     this.getEntity(this.getHeader(), ""), ApiResponseCategoriesDTO.class);
 
@@ -102,7 +104,8 @@ public class CategoriesServiceAdapter implements GetCategoriesServicePort {
     private RequestEntity<ApiResponseCategoriesDTO> getEntity(
             HttpHeaders authHeaders, String id) throws URISyntaxException {
 
-        StringBuilder strUrl = new StringBuilder(properties.getBaseUrl())
+        StringBuilder strUrl = new StringBuilder();
+        strUrl.append(properties.getBaseUrl())
                 .append(properties.getGetCategories());
 
         if(id != null && !id.isBlank()){
