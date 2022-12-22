@@ -13,6 +13,7 @@
 		<module>db-database</module>
 		<module>mioxxo</module>
 		<module>api-digitalbackend</module>
+		<module>utileria</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
