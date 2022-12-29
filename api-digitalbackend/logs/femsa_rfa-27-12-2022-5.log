@@ -1,4 +1,0 @@
-2022-12-27 11:21:54.725  INFO JESUSSCRUZ---[nio-8080-exec-1] c.f.d.b.a.c.BookController              :UUID=>d8717fc12d249b6dc375b2076cecc820
-2022-12-27 11:22:23.002  INFO JESUSSCRUZ---[nio-8080-exec-3] c.f.d.b.a.c.BookController              :Info=>BookDTO(id=2, title=Playing with Java Microservices, description=Microservices Book, price=20.0)
-2022-12-27 11:22:23.003  INFO JESUSSCRUZ---[nio-8080-exec-3] c.f.d.b.a.c.BookController              :UUID=>871d058b7c03c366f9217bd73942670c
-2022-12-27 11:57:58.111  WARN JESUSSCRUZ---[l-1 housekeeper] c.z.h.p.HikariPool                      :HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m32s498ms541µs600ns).

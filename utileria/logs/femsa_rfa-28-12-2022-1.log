@@ -1,22 +1,22 @@
-2022-12-28 16:43:40.825  INFO JESUSSCRUZ---[           main] c.f.d.b.u.UtileriaApplication           :Starting UtileriaApplication using Java 17.0.5 on JESUSSCRUZ with PID 19392 (C:\Users\jesus.scruz\OneDrive - neoris.com\Documents\FEMSA\JAVA\Exceptions\digitalbackendPrototype\utileria\target\classes started by jesus.scruz in C:\Users\jesus.scruz\OneDrive - neoris.com\Documents\FEMSA\JAVA\Exceptions\digitalbackendPrototype\utileria)
-2022-12-28 16:43:40.830 DEBUG JESUSSCRUZ---[           main] c.f.d.b.u.UtileriaApplication           :Running with Spring Boot v2.7.6, Spring v5.3.24
-2022-12-28 16:43:40.830  INFO JESUSSCRUZ---[           main] c.f.d.b.u.UtileriaApplication           :No active profile set, falling back to 1 default profile: "default"
-2022-12-28 16:43:41.517  INFO JESUSSCRUZ---[           main] o.s.b.w.e.t.TomcatWebServer             :Tomcat initialized with port(s): 8081 (http)
-2022-12-28 16:43:41.528  INFO JESUSSCRUZ---[           main] o.a.c.h.Http11NioProtocol               :Initializing ProtocolHandler ["http-nio-8081"]
-2022-12-28 16:43:41.529  INFO JESUSSCRUZ---[           main] o.a.c.c.StandardService                 :Starting service [Tomcat]
-2022-12-28 16:43:41.530  INFO JESUSSCRUZ---[           main] o.a.c.c.StandardEngine                  :Starting Servlet engine: [Apache Tomcat/9.0.69]
-2022-12-28 16:43:41.607  INFO JESUSSCRUZ---[           main] o.a.c.c.C.[.[.[/utileria]               :Initializing Spring embedded WebApplicationContext
-2022-12-28 16:43:41.607  INFO JESUSSCRUZ---[           main] w.s.c.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 750 ms
-2022-12-28 16:43:41.989  INFO JESUSSCRUZ---[           main] o.s.b.a.e.w.EndpointLinksResolver       :Exposing 2 endpoint(s) beneath base path '/actuator'
-2022-12-28 16:43:42.009  INFO JESUSSCRUZ---[           main] o.a.c.h.Http11NioProtocol               :Starting ProtocolHandler ["http-nio-8081"]
-2022-12-28 16:43:42.023  INFO JESUSSCRUZ---[           main] o.s.b.w.e.t.TomcatWebServer             :Tomcat started on port(s): 8081 (http) with context path '/utileria'
-2022-12-28 16:43:42.034  INFO JESUSSCRUZ---[           main] c.f.d.b.u.UtileriaApplication           :Started UtileriaApplication in 1.437 seconds (JVM running for 2.169)
-2022-12-28 16:43:44.613  INFO JESUSSCRUZ---[on(5)-127.0.0.1] o.a.c.c.C.[.[.[/utileria]               :Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-12-28 16:43:44.613  INFO JESUSSCRUZ---[on(5)-127.0.0.1] o.s.w.s.DispatcherServlet               :Initializing Servlet 'dispatcherServlet'
-2022-12-28 16:43:44.614  INFO JESUSSCRUZ---[on(5)-127.0.0.1] o.s.w.s.DispatcherServlet               :Completed initialization in 1 ms
-2022-12-28 16:48:13.180  INFO JESUSSCRUZ---[n(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin:Application shutdown requested.
-2022-12-28 16:48:13.198  INFO JESUSSCRUZ---[n(12)-127.0.0.1] o.a.c.h.Http11NioProtocol               :Pausing ProtocolHandler ["http-nio-8081"]
-2022-12-28 16:48:13.198  INFO JESUSSCRUZ---[n(12)-127.0.0.1] o.a.c.c.StandardService                 :Stopping service [Tomcat]
-2022-12-28 16:48:13.199  INFO JESUSSCRUZ---[n(12)-127.0.0.1] o.a.c.c.C.[.[.[/utileria]               :Destroying Spring FrameworkServlet 'dispatcherServlet'
-2022-12-28 16:48:13.203  INFO JESUSSCRUZ---[n(12)-127.0.0.1] o.a.c.h.Http11NioProtocol               :Stopping ProtocolHandler ["http-nio-8081"]
-2022-12-28 16:48:13.206  INFO JESUSSCRUZ---[n(12)-127.0.0.1] o.a.c.h.Http11NioProtocol               :Destroying ProtocolHandler ["http-nio-8081"]
+2022-12-28 16:48:14.933  INFO JESUSSCRUZ---[           main] c.f.d.b.u.UtileriaApplication           :Starting UtileriaApplication using Java 17.0.5 on JESUSSCRUZ with PID 15804 (C:\Users\jesus.scruz\OneDrive - neoris.com\Documents\FEMSA\JAVA\Exceptions\digitalbackendPrototype\utileria\target\classes started by jesus.scruz in C:\Users\jesus.scruz\OneDrive - neoris.com\Documents\FEMSA\JAVA\Exceptions\digitalbackendPrototype\utileria)
+2022-12-28 16:48:14.938 DEBUG JESUSSCRUZ---[           main] c.f.d.b.u.UtileriaApplication           :Running with Spring Boot v2.7.6, Spring v5.3.24
+2022-12-28 16:48:14.939  INFO JESUSSCRUZ---[           main] c.f.d.b.u.UtileriaApplication           :No active profile set, falling back to 1 default profile: "default"
+2022-12-28 16:48:15.682  INFO JESUSSCRUZ---[           main] o.s.b.w.e.t.TomcatWebServer             :Tomcat initialized with port(s): 8081 (http)
+2022-12-28 16:48:15.692  INFO JESUSSCRUZ---[           main] o.a.c.h.Http11NioProtocol               :Initializing ProtocolHandler ["http-nio-8081"]
+2022-12-28 16:48:15.692  INFO JESUSSCRUZ---[           main] o.a.c.c.StandardService                 :Starting service [Tomcat]
+2022-12-28 16:48:15.693  INFO JESUSSCRUZ---[           main] o.a.c.c.StandardEngine                  :Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-28 16:48:15.765  INFO JESUSSCRUZ---[           main] o.a.c.c.C.[.[.[/utileria]               :Initializing Spring embedded WebApplicationContext
+2022-12-28 16:48:15.765  INFO JESUSSCRUZ---[           main] w.s.c.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 798 ms
+2022-12-28 16:48:16.171  INFO JESUSSCRUZ---[           main] o.s.b.a.e.w.EndpointLinksResolver       :Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-12-28 16:48:16.194  INFO JESUSSCRUZ---[           main] o.a.c.h.Http11NioProtocol               :Starting ProtocolHandler ["http-nio-8081"]
+2022-12-28 16:48:16.209  INFO JESUSSCRUZ---[           main] o.s.b.w.e.t.TomcatWebServer             :Tomcat started on port(s): 8081 (http) with context path '/utileria'
+2022-12-28 16:48:16.219  INFO JESUSSCRUZ---[           main] c.f.d.b.u.UtileriaApplication           :Started UtileriaApplication in 1.535 seconds (JVM running for 2.209)
+2022-12-28 16:48:18.386  INFO JESUSSCRUZ---[on(3)-127.0.0.1] o.a.c.c.C.[.[.[/utileria]               :Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-28 16:48:18.387  INFO JESUSSCRUZ---[on(3)-127.0.0.1] o.s.w.s.DispatcherServlet               :Initializing Servlet 'dispatcherServlet'
+2022-12-28 16:48:18.388  INFO JESUSSCRUZ---[on(3)-127.0.0.1] o.s.w.s.DispatcherServlet               :Completed initialization in 1 ms
+2022-12-28 16:49:14.439  INFO JESUSSCRUZ---[on(6)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin:Application shutdown requested.
+2022-12-28 16:49:14.457  INFO JESUSSCRUZ---[on(6)-127.0.0.1] o.a.c.h.Http11NioProtocol               :Pausing ProtocolHandler ["http-nio-8081"]
+2022-12-28 16:49:14.457  INFO JESUSSCRUZ---[on(6)-127.0.0.1] o.a.c.c.StandardService                 :Stopping service [Tomcat]
+2022-12-28 16:49:14.459  INFO JESUSSCRUZ---[on(6)-127.0.0.1] o.a.c.c.C.[.[.[/utileria]               :Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-28 16:49:14.461  INFO JESUSSCRUZ---[on(6)-127.0.0.1] o.a.c.h.Http11NioProtocol               :Stopping ProtocolHandler ["http-nio-8081"]
+2022-12-28 16:49:14.463  INFO JESUSSCRUZ---[on(6)-127.0.0.1] o.a.c.h.Http11NioProtocol               :Destroying ProtocolHandler ["http-nio-8081"]

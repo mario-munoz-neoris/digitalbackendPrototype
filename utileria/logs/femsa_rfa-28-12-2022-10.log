@@ -1,6 +1,0 @@
-2022-12-28 18:11:25.722  INFO JESUSSCRUZ---[n(29)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin:Application shutdown requested.
-2022-12-28 18:11:25.745  INFO JESUSSCRUZ---[n(29)-127.0.0.1] o.a.c.h.Http11NioProtocol               :Pausing ProtocolHandler ["http-nio-8081"]
-2022-12-28 18:11:25.745  INFO JESUSSCRUZ---[n(29)-127.0.0.1] o.a.c.c.StandardService                 :Stopping service [Tomcat]
-2022-12-28 18:11:25.747  INFO JESUSSCRUZ---[n(29)-127.0.0.1] o.a.c.c.C.[.[.[/utileria]               :Destroying Spring FrameworkServlet 'dispatcherServlet'
-2022-12-28 18:11:25.752  INFO JESUSSCRUZ---[n(29)-127.0.0.1] o.a.c.h.Http11NioProtocol               :Stopping ProtocolHandler ["http-nio-8081"]
-2022-12-28 18:11:25.755  INFO JESUSSCRUZ---[n(29)-127.0.0.1] o.a.c.h.Http11NioProtocol               :Destroying ProtocolHandler ["http-nio-8081"]
