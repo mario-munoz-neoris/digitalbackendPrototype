@@ -1,0 +1,19 @@
+2022-12-28 16:46:44.836  INFO JESUSSCRUZ---[nio-8080-exec-2] c.f.d.b.u.t.LoggerUtils                 :Severity=>4
+2022-12-28 16:46:44.839  INFO JESUSSCRUZ---[nio-8080-exec-2] c.f.d.b.u.t.LoggerUtils                 :Test logger2
+2022-12-28 16:46:44.839  INFO JESUSSCRUZ---[nio-8080-exec-2] c.f.d.b.u.t.LoggerUtils                 :Severity=>3
+2022-12-28 16:46:44.839  INFO JESUSSCRUZ---[nio-8080-exec-2] c.f.d.b.u.t.LoggerUtils                 :Test logger3
+2022-12-28 16:46:44.839  INFO JESUSSCRUZ---[nio-8080-exec-2] c.f.d.b.u.t.LoggerUtils                 :Severity=>1
+2022-12-28 16:46:44.841  INFO JESUSSCRUZ---[nio-8080-exec-2] c.f.d.b.u.t.LoggerUtils                 :Test logger4
+2022-12-28 16:46:44.841  INFO JESUSSCRUZ---[nio-8080-exec-2] c.f.d.b.u.t.LoggerUtils                 :Severity=>6
+2022-12-28 16:46:44.842  INFO JESUSSCRUZ---[nio-8080-exec-2] c.f.d.b.u.t.LoggerUtils                 :2022-46-28 04:46:44
+2022-12-28 16:46:44.842  INFO JESUSSCRUZ---[nio-8080-exec-2] c.f.d.b.a.c.BookController              :UUID=>96d6db8e-1c82-5f52-a88e-a1e9f8eefa77
+2022-12-28 16:47:15.103  INFO JESUSSCRUZ---[n(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin:Application shutdown requested.
+2022-12-28 16:47:15.131  INFO JESUSSCRUZ---[n(11)-127.0.0.1] o.a.c.h.Http11NioProtocol               :Pausing ProtocolHandler ["http-nio-8080"]
+2022-12-28 16:47:15.132  INFO JESUSSCRUZ---[n(11)-127.0.0.1] o.a.c.c.StandardService                 :Stopping service [Tomcat]
+2022-12-28 16:47:15.133  INFO JESUSSCRUZ---[n(11)-127.0.0.1] o.a.c.c.C.[.[.[/]                       :Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-28 16:47:15.135  INFO JESUSSCRUZ---[n(11)-127.0.0.1] o.a.c.h.Http11NioProtocol               :Stopping ProtocolHandler ["http-nio-8080"]
+2022-12-28 16:47:15.137  INFO JESUSSCRUZ---[n(11)-127.0.0.1] o.a.c.h.Http11NioProtocol               :Destroying ProtocolHandler ["http-nio-8080"]
+2022-12-28 16:47:15.140  INFO JESUSSCRUZ---[n(11)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-28 16:47:15.140  INFO JESUSSCRUZ---[n(11)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl:HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-12-28 16:47:15.355  INFO JESUSSCRUZ---[n(11)-127.0.0.1] c.z.h.HikariDataSource                  :HikariPool-1 - Shutdown initiated...
+2022-12-28 16:47:15.357  INFO JESUSSCRUZ---[n(11)-127.0.0.1] c.z.h.HikariDataSource                  :HikariPool-1 - Shutdown completed.
