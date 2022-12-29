@@ -14,7 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.femsa.digital.backend.domain.data.BookDTO;
 import com.femsa.digital.backend.domain.ports.app.BookServiceAppPort;
-import com.femsa.digital.backend.utileria.exception.ResourceNotFoundException;
+import com.femsa.digital.backend.utileria.exception.FemsaDigitalException;
+import com.femsa.digital.backend.utileria.tools.StringUtils;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -39,8 +40,9 @@ public class BookController {
 	@GetMapping("/get/{id}")
 	public BookDTO getBookByID(@PathVariable long id) {
 		if (id > 10) {
-			throw new ResourceNotFoundException("NO SE LOCALIZO EL ID->" + id);
+			throw new FemsaDigitalException("No se localizó el ID->" + id);
 		}
+		log.info("UUID=>{}", StringUtils.getRamdomUUID("A"));
 		return bookServicePort.getBookById(id);
 	}
 
